@@ -1,0 +1,125 @@
+Data Field,Description
+ENTITY , Unique system-generated number to identify license plate-based accounts
+TERMDT ," If a license plate was on a fleet and terminated, this would record the date on which the plate was terminated from the fleet. Julian date format."
+MULTNO ," If a license plate was on a fleet, that fleet is identified with this number"
+ENT DUE , Total amount due on the entity
+ENT OVP , Overpaid amount on the entity
+CONF DT , Date on which the BMV/Registry returned registered owner name and address information
+HOLD CT , Total number of tickets on the entity on registration hold
+LAST SEIZ , Date on which the vehicle was last seized 
+SEIZ STAT , Indicates if the vehicle is currently seized
+SEIZ DT , Date on which the vehicle was released on the last seizure record 
+NIX DT , Date the address corresponding to ticket was nixied
+NIX STAT , Indicates nixie on ticket-level address
+BOOTBL CT , Number of tickets on the entity that make the vehicle boot/tow eligible
+SEIZBL CT , Number of tickets on the entity toward a custom-designated count (client-specific; used some places and not others)
+EXCLUDE , Indicates whether ticket should be excluded from counts
+TICKET , Ticket number
+DUE , Amount due on ticket including penalties minus any payments/reductions made
+PLT YR , EXPIRATION YEAR OF PLATE
+PLT EXP , Expiration date of plate. Julian date format.
+TICK TYP ,
+BOOT IND , Indicates if ticket is eligible to be counted toward boot/tow eligibility 
+SEIZ IND , Indicates if ticket is eligible to be counted toward customized count list
+OVERPD , Overpaid amount on ticket
+ENTITY , Unique system-generated number to identify license plate-based accounts
+TERMDT ," If a license plate was on a fleet and terminated, this would record the date on which the plate was terminated from the fleet. Julian date format."
+MULTNO ," If a license plate was on a fleet, that fleet is identified with this number"
+ENT DUE , Total amount due on the entity
+ENT OVP , Overpaid amount on the entity
+CONF DT , Date on which the BMV/Registry returned registered owner name and address information
+HOLD CT , Total number of tickets on the entity on registration hold
+LAST SEIZ , Date on which the vehicle was last seized 
+SEIZ STAT , Indicates if the vehicle is currently seized
+SEIZ DT , Date on which the vehicle was released on the last seizure record 
+NIX DT , Date the address corresponding to ticket was nixied
+NIX STAT , Indicates nixie on ticket-level address
+BOOTBL CT , Number of tickets on the entity that make the vehicle boot/tow eligible
+SEIZBL CT , Number of tickets on the entity toward a custom-designated count (client-specific; used some places and not others)
+EXCLUDE , Indicates whether ticket should be excluded from counts
+TICKET , Ticket number
+DUE , Amount due on ticket including penalties minus any payments/reductions made
+PLT YR , EXPIRATION YEAR OF PLATE
+PLT EXP , Expiration date of plate. Julian date format.
+TICK TYP ,
+BOOT IND , Indicates if ticket is eligible to be counted toward boot/tow eligibility 
+SEIZ IND , Indicates if ticket is eligible to be counted toward customized count list
+OVERPD , Overpaid amount on ticket
+HOLD RQ DT , Date on which the ticket was placed on registration hold
+COLL AGCY , Indicates the agency to which the ticket is assigned for secondary collections
+COLL DT , Date on which the ticket was assigned to secondary collections agency
+ISS DT , Issue date of the ticket. Julian date format.
+BADGE , Badge number of issuing officer
+ISS AGCY , Agency of issuing officer
+DIV , Division of issuing officer.  May also be used for storing client-specific information.
+VIOL , Internal violation code
+FINE , Base fine amount of violation code
+LOCATION , Location of infraction denoted on the ticket
+ROUTE , Officer route was on when ticket was issued
+MAKE , Vehicle make denoted on the ticket
+ISS TIME , Issue time of ticket
+TIME2 ," Initial time vehicle was recorded (i.e. for timing violations, the time at which the vehicle was first seen)"
+METER , Meter number denoted on the ticket
+LOAD DT , Date ticket was batched to load to eTIMS
+BATCH , Batch number in which the ticket was included to be added to eTIMS
+BATCH DT , Date batch was loaded to eTIMS
+PEN1 , First penalty assessment amount
+PEN2 , Second penalty assessment amount
+PEN3 , Third penalty assessment amount
+PEN4 , Fourth penalty assessment amount
+PEN5 , Fifth penalty assessment amount
+MAKE , Vehicle make as provided by the BMV/Registry
+CONF DT , Date BMV/Registry returned registered owner name and address information
+NIXTK DT,Date the address corresponding to ticket was nixied
+NIXTK STAT , Indicates that a notice sent has been returned due to bad address
+HOLD STAT ,Indicates registration hold status of ticket.  0 – eligible; 1 – requested; 2 – held; 3/4/5 - cleared; 8 – request rejected
+HOLD DATE , Date ticket reached current hold status
+PAY TYPE ," Indicator that converts specific mode of payment i.e. refund, bounced check, clerical error, etc."
+DEPOSIT DT , Date that payment is deposited
+PAY AMT , Amount received in payment for ticket 
+PAY METH ," Indicator that converts specific method of payment i.e. check, card, cash, etc."
+PAY PRC DT , Date on which payment was processed
+PAY BATCH , Batch number in which payment was included
+MORE PAYS , Signals additional payments made on this ticket
+PAY SRC , Indicates payment source.  1  - online; 2 - batch/lockbox; 6 -  IVR; 7 -  Pay by Web
+MAIL1 TY , First notice number
+MAIL1 DT , Mail date of first notice
+MAIL1 PDT , Process date of first notice
+MAIL2 TY , Second notice number
+MAIL2 DT , Mail date of second notice
+MAIL2 PDT , Process date of second notice
+MAIL3 TY , Third notice number
+MAIL3 DT , Mail date of third notice
+MAIL3 PDT , Process date of third notice
+MAIL4 TY , Fourth notice number
+MAIL4 DT , Mail date of fourth notice
+MAIL4 PDT , Process date of fourth notice
+MAIL5 TY , Fifth notice number
+MAIL5 DT , Mail date of fifth notice
+MAIL5 PDT , Process date of fifth notice
+MORE MAIL , Signifies additional notices mailed on this ticket
+SUSP TIL , Date on which most recent suspend expired
+SUSP CODE , Most recent suspend code applied
+SUSP DT , Date on which most recent suspend was applied
+MORE SUSP , Signifies additional suspends were previously applied
+HEAR DT , Most recent hearing date
+HEAR TM , Most recent hearing time
+HEAR PROC , Most recent hearing processing date 
+PLEA , Customer’s plea
+RED , Reduction amount applied to ticket
+DISPO , Most recent disposition code applied to ticket
+DIS DT , Date of most recent disposition
+DIS PDT , Processing date of most recent disposition
+MORE HEAR , Signifies additional hearings occurred
+HRG OFFCR , Name of hearing officer
+CORRO , Most recent correspondence generated
+COR DT , Date of most recent correspondence generated
+MORE CORR , Signifies additional correspondence was previously generated
+NAME REAS,Source of address. M – manual; R – Registry; F – Fleet change of responsibility
+LAT , Latitude of handheld issuing device when ticket was issued
+LONG , Longitude of handheld issuing device when ticket was issued
+OPEN CT , Number of open (unpaid) tickets on the entity
+IPP NO , Installment Payment Plan number
+IPP STAT , Status of the IPP on which the ticket is enrolled
+,
+,
