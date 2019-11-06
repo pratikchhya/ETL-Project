@@ -10,13 +10,12 @@ Columbus City Parking Violations dataset covers the parking violations identifie
  
 ### Steps to Follow:
 
-Open Git bash, activate your python envrionment
+Open Git bash, activate your python envrionment and install libraries mentioned below:
 
-#### Make sure to install this before running:
- - pip install pandas
- - pip install sqlalchemy
- - pip install psycopg2
- - pip install datetime
+ - install pandas
+ - install sqlalchemy
+ - install psycopg2
+ - install datetime
 
 Open Jupyter Notebook
 
@@ -29,8 +28,20 @@ Three files you would need -
 
 ![etl.png](etl.png)
 
-#### Challenges
+#### Challenges group faced
 
  1. Converting Julian date format to datetime format for column [issue_date]– During the conversion process, new column was created for     issue_date with right datetime format.    
  2. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
  
+ #### conclusion
+ 	Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
+ Some of the questions to look into based on the final dataset:
+	How many tickets were there as a total?
+	How many tickets were per year during 2013-2018 and if there is any trend?
+	Which parking meters require ongoing management, operations, and maintenance.
+	Average ticket fine amount?
+	Most popular violations?
+	Popular Car make which received the tickets?
+	Where are tickets most commonly issued? 
+	When are tickets most likely to be issued?
+
