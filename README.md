@@ -28,20 +28,52 @@ Three files you would need -
 
 ![etl.png](etl.png)
 
+
+#### Connecting to Postgres
+
+   ```sql
+   rds_connection_string = "<username>:<password>@localhost:5432/parking_db"
+   engine = create_engine(f'postgresql://{rds_connection_string}')
+   ```
+   - Create new data (parking_fines) with select columns
+   
+   ```sql
+    parking_fines_df = merge_df[['ticket_id', 'fine', 'amount_paid', 'date_issued', 'issue_time']].copy()
+    parking_fines_df.reset_index(drop=True)
+   ``` 
+   - Make sure the above three tables are created in postgres as well before you start the next steps
+   
+   - Check for tables
+   
+   ```sql
+   engine.table_names()
+   ``` 
+   - Use pandas to load csv converted DataFrame into database
+   
+   ```sql
+   parking_fines_df.to_sql(name='parking_fines', con=engine, if_exists='append', index=False)
+   ```
+   - Confirm data has been added by querying the customer_name table
+     - NOTE: can also check using pgAdmin
+
+   ```sql
+   pd.read_sql_query('select * from parking_fines', con=engine).head()
+   ```
+   
 #### Challenges group faced
 
  1. Converting Julian date format to datetime format for column [issue_date]– During the conversion process, new column was created for     issue_date with right datetime format.    
  2. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
  
  #### conclusion
- 	Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
- Some of the questions to look into based on the final dataset:
-	How many tickets were there as a total?
-	How many tickets were per year during 2013-2018 and if there is any trend?
-	Which parking meters require ongoing management, operations, and maintenance.
-	Average ticket fine amount?
-	Most popular violations?
-	Popular Car make which received the tickets?
-	Where are tickets most commonly issued? 
-	When are tickets most likely to be issued?
+ Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
+  - Some of the questions to look into based on the final dataset:
+    - How many tickets were there as a total?
+    - How many tickets were per year during 2013-2018 and if there is any trend?
+    - Which parking meters require ongoing management, operations, and maintenance.
+    - Average ticket fine amount?
+    - Most popular violations?
+    - Popular Car make which received the tickets?
+    - Where are tickets most commonly issued? 
+    - When are tickets most likely to be issued?
 
