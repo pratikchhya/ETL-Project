@@ -29,7 +29,7 @@ Three files you would need -
 ![etl.png](etl.png)
 
 
-#### Connecting to Postgres
+#### Connect to local database
 
    ```sql
    rds_connection_string = "<username>:<password>@localhost:5432/parking_db"
@@ -65,7 +65,8 @@ Three files you would need -
  1. Converting Julian date format to datetime format for column [issue_date]– During the conversion process, new column was created for     issue_date with right datetime format.    
  2. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
  
- #### conclusion
+ #### Conclusion
+ 
  Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
   - Some of the questions to look into based on the final dataset:
     - How many tickets were there as a total?
