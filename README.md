@@ -31,7 +31,6 @@ Three files you would need -
 
 #### Challenges
 
- 1. Converting Julian date format to datetime format for column [issue_date]– New column was created when date format was changed. The        old column was deleted.  
- 2. Converting data type for column [Amount_paid] – We were not able to convert one (single) value into integer. Therefore, that value        (row) was deleted.
- 3. Violation code- Metadata was nonexistent for some of the violation codes, making them harder to interpret. 
+ 1. Converting Julian date format to datetime format for column [issue_date]– During the conversion process, new column was created for     issue_date with right datetime format.    
+ 2. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
  
