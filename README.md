@@ -6,7 +6,7 @@ Columbus City Parking Violations dataset covers the parking violations identifie
 
 Open Git bash, activate your python envrionment
 
-# Make sure to install this before running:
+#### Make sure to install this before running:
  - pip install pandas
  - pip install sqlalchemy
  - pip install psycopg2
