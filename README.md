@@ -1,5 +1,7 @@
 # ETL-Project
 
+Columbus City Parking Violations dataset covers the parking violations identified by Parking Enforcement Officer (PEO) and the tickets issued for those violations. The data identifies the status of the ticket (e.g., paid, dismissed, etc.,) This dataset covers years 2013 through 2018. The Meters ID dataset contains identifiable information relating to each parking ticket issued based on Meter Ids. Metadata file provides information on the column names within the Columbus City Parking dataset. 
+
 ### Steps to Follow:
 
 Open Git bash, activate your python envrionment and open your jupyter notebook
