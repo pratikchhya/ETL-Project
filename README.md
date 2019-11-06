@@ -4,7 +4,15 @@ Columbus City Parking Violations dataset covers the parking violations identifie
 
 ### Steps to Follow:
 
-Open Git bash, activate your python envrionment and open your jupyter notebook
+Open Git bash, activate your python envrionment
+
+# Make sure to install this before running:
+ - pip install pandas
+ - pip install sqlalchemy
+ - pip install psycopg2
+ - pip install datetime
+
+Open Jupyter Notebook
 
 Three files you would need - 
   - 1st File - CSV File from Google Dirve Link - https://drive.google.com/open?id=1nncijF9na3S-2AZlfNZCTvhvbPxcT8Te
@@ -14,3 +22,11 @@ Three files you would need -
 #### Flowchart 
 
 ![etl.png](etl.png)
+
+#### Challenges
+
+ 1. 
+ 2.
+ 3.
+ 4.
+ 5.
