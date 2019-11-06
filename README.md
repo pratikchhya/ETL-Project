@@ -31,8 +31,7 @@ Three files you would need -
 
 #### Challenges
 
- 1. 
- 2.
- 3.
- 4.
- 5.
+ 1. Converting Julian date format to datetime format for column [issue_date]– New column was created when date format was changed. The        old column was deleted.  
+ 2. Converting data type for column [Amount_paid] – We were not able to convert one (single) value into integer. Therefore, that value        (row) was deleted.
+ 3. Violation code- Metadata was nonexistent for some of the violation codes, making them harder to interpret. 
+ 
