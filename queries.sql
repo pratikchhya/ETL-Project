@@ -1,3 +1,5 @@
+--Data Analysis
+
 -- Drop tables
 Drop Table parking_fines;
 Drop Table parking_location;
@@ -27,6 +29,7 @@ latitude FLOAT NOT null,
 longitude FLOAT NOT null
 );
 
+-- Query to see if Table has any Data
 select * from parking_location;
 select * from parking_cars;
 select * from parking_fines;
