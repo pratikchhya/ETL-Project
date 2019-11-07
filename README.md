@@ -63,19 +63,18 @@ Open Jupyter Notebook
    
 ### Challenges group faced
    
- -Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to        float at once. Multiple steps had to be done to change that column to float.
- 
-  -Violation code - For few violation code there were no information available which made it difficult to interpret.
-  
-  -Dropping rows vs columns for latitude/longitude. Dropping rows lost three years of data.
+   1. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to        float at once. Multiple steps had to be done to change that column to float.
+   2. Violation code - For few violation code there were no information available which made it difficult to interpret.
+   3. Dropping rows with values of 0 for latitude/longitude resulted loss of three years of data.
  
  ### Conclusion
  
  Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
   - Some of the questions to look into based on the final dataset:
-    - How many tickets were there as a total?
-    - How many tickets were per year during 2017-2018 and if there is any trend?
-    - Popular Car make which received the tickets?
-    - When are tickets most likely to be issued?
-    - Which parking meters require ongoing management, operations, and maintenance.
+     i.	How many tickets were there as a total?
+     ii.	How many tickets were per year during 2017-2018 and if there is any trend?
+     iii.	Popular Car make which received the tickets?
+     iv.	When are tickets most likely to be issued?
+     v.	Which number plate received the most ticket violations from 2017-2018?
+
 
