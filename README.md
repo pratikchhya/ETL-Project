@@ -25,7 +25,7 @@ Open Jupyter Notebook
     - https://drive.google.com/open?id=1nncijF9na3S-2AZlfNZCTvhvbPxcT8Te
   - 2nd File - Parking- Meters 
     - http://opendata.columbus.gov/datasets/parking-meters/data?geometry=-83.245%2C39.931%2C-82.812%2C40.023
-  - 3rd File - Metadata 
+  - 3rd File - Metadata - To decode the column names used in the 1st data file
     - https://data.world/smartcolumbusos/040b5929-db26-4453-920a-ceb282c4359f/workspace/file?filename=geocoded-parking-violations-csv-5.csv
 
 ### Flowchart 
