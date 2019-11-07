@@ -1,7 +1,7 @@
------------------------------
 -- Create table 1
 create table parking_cars(
 ticket_id float primary key,
+entity float not null,
 car_make varchar not null,
 total_tickets int not null)
 ;
@@ -26,8 +26,8 @@ select * from parking_location;
 select * from parking_cars;
 select * from parking_fines;
 
--- Join all tables
-SELECT r.ticket_id, r.car_make, r.total_tickets, f.fine, f.amount_paid, f.date_issued, f.issue_time
+-- Join Tables
+SELECT r.ticket_id, r.entity, r.car_make, r.total_tickets, f.fine, f.amount_paid, f.date_issued, f.issue_time, l.latitude, l.longitude
 FROM parking_cars as r
 JOIN parking_fines as f
 ON r.ticket_id = f.ticket_id
@@ -68,3 +68,9 @@ SELECT COUNT(issue_time) from parking_fines
 SELECT COUNT(issue_time) from parking_fines
     WHERE issue_time >= '06:00 PM'
     AND issue_time < '12:00 AM';
+
+-- Which number plate got the most ticket violations from 2017-2018?
+SELECT entity, COUNT(entity) AS "frequency"
+FROM parking_cars
+GROUP BY entity
+ORDER BY frequency DESC;
