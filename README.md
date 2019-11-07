@@ -78,6 +78,6 @@ Open Jupyter Notebook
      2. How many tickets were per year during 2017-2018 and if there is any trend?
      3. Popular Car make which received the tickets?
      4. When are tickets most likely to be issued?
-     5. Which number plate received the most ticket violations from 2017-2018?
+     5. Which entity (Unique system-generated number to identify license plate-based accounts) received the most ticket violations from 2017-2018?
 
 
