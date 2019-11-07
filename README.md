@@ -19,7 +19,8 @@ Open Git bash, activate your python envrionment and install libraries mentioned 
 
 Open Jupyter Notebook
 
-Three files you would need - 
+### Data Sources 
+
   - 1st File - CSV File from Google Dirve Link - https://drive.google.com/open?id=1nncijF9na3S-2AZlfNZCTvhvbPxcT8Te
   - 2nd File - Parking- Meters - http://opendata.columbus.gov/datasets/parking-meters/data?geometry=-83.245%2C39.931%2C-82.812%2C40.023
   - 3rd File - Metadata - https://data.world/smartcolumbusos/040b5929-db26-4453-920a-ceb282c4359f/workspace/file?filename=geocoded-parking-violations-csv-5.csv
@@ -29,7 +30,7 @@ Three files you would need -
 ![etl.png](etl.png)
 
 
-### Connect to local database
+### Connecting to local database
 
    ```sql
    rds_connection_string = "<username>:<password>@localhost:5432/parking_db"
