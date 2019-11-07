@@ -1,9 +1,12 @@
+-----------------------------
+-- Create table 1
 create table parking_cars(
 ticket_id float primary key,
 car_make varchar not null,
 total_tickets int not null)
 ;
 
+-- Create table 2
 create table parking_fines (
 ticket_id float primary key,
     fine float not NULL,
@@ -12,6 +15,7 @@ ticket_id float primary key,
     issue_time TIME not NULL
 );
 
+-- Create table 3
 create table parking_location (
 ticket_id float primary key,
 latitude FLOAT NOT null,
@@ -22,7 +26,7 @@ select * from parking_location;
 select * from parking_cars;
 select * from parking_fines;
 
-
+-- Join all tables
 SELECT r.ticket_id, r.car_make, r.total_tickets, f.fine, f.amount_paid, f.date_issued, f.issue_time
 FROM parking_cars as r
 JOIN parking_fines as f
