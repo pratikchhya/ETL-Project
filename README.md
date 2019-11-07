@@ -24,12 +24,12 @@ Three files you would need -
   - 2nd File - Parking- Meters - http://opendata.columbus.gov/datasets/parking-meters/data?geometry=-83.245%2C39.931%2C-82.812%2C40.023
   - 3rd File - Metadata - https://data.world/smartcolumbusos/040b5929-db26-4453-920a-ceb282c4359f/workspace/file?filename=geocoded-parking-violations-csv-5.csv
 
-#### Flowchart 
+### Flowchart 
 
 ![etl.png](etl.png)
 
 
-#### Connect to local database
+### Connect to local database
 
    ```sql
    rds_connection_string = "<username>:<password>@localhost:5432/parking_db"
@@ -41,7 +41,7 @@ Three files you would need -
     parking_fines_df = merge_df[['ticket_id', 'fine', 'amount_paid', 'date_issued', 'issue_time']].copy()
     parking_fines_df.reset_index(drop=True)
    ``` 
-   - Make sure the above three tables are created in postgres as well before you start the next steps
+   - Make sure the above table(s) are created in postgres as well before you start the next steps
    
    - Check for tables
    
@@ -60,12 +60,12 @@ Three files you would need -
    pd.read_sql_query('select * from parking_fines', con=engine).head()
    ```
    
-#### Challenges group faced
+### Challenges group faced
 
  1. Converting Julian date format to datetime format for column [issue_date]– During the conversion process, new column was created for     issue_date with right datetime format.    
  2. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
  
- #### Conclusion
+ ### Conclusion
  
  Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
   - Some of the questions to look into based on the final dataset:
