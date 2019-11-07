@@ -35,7 +35,7 @@ Three files you would need -
    rds_connection_string = "<username>:<password>@localhost:5432/parking_db"
    engine = create_engine(f'postgresql://{rds_connection_string}')
    ```
-   - Create new data (parking_fines) with select columns
+   - Create new dataframe with selected columns
    
    ```sql
     parking_fines_df = merge_df[['ticket_id', 'fine', 'amount_paid', 'date_issued', 'issue_time']].copy()
@@ -53,7 +53,7 @@ Three files you would need -
    ```sql
    parking_fines_df.to_sql(name='parking_fines', con=engine, if_exists='append', index=False)
    ```
-   - Confirm data has been added by querying the customer_name table
+   - Confirm data has been added by querying the table
      - NOTE: can also check using pgAdmin
 
    ```sql
