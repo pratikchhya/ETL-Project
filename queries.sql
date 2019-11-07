@@ -77,7 +77,7 @@ SELECT COUNT(issue_time) from parking_fines
     WHERE issue_time >= '06:00 PM'
     AND issue_time < '12:00 AM';
 
--- Which number plate (entity) received the most ticket violations from 2017-2018?
+-- Which entity (Unique system-generated number to identify license plate-based accounts) received the most ticket violations from 2017-2018?
 SELECT entity, COUNT(entity) AS "frequency"
 FROM parking_cars
 GROUP BY entity
