@@ -63,7 +63,7 @@ Open Jupyter Notebook
    
 ### Challenges group faced
    
- - Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float.
+ -Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to        float at once. Multiple steps had to be done to change that column to float.
  
   -Violation code - For few violation code there were no information available which made it difficult to interpret.
   
