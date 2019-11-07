@@ -70,11 +70,8 @@ Three files you would need -
  Reason why these columns were selected is to bring awareness to different factors that contribute to parking violations.
   - Some of the questions to look into based on the final dataset:
     - How many tickets were there as a total?
-    - How many tickets were per year during 2013-2018 and if there is any trend?
-    - Which parking meters require ongoing management, operations, and maintenance.
-    - Average ticket fine amount?
-    - Most popular violations?
+    - How many tickets were per year during 2017-2018 and if there is any trend?
     - Popular Car make which received the tickets?
-    - Where are tickets most commonly issued? 
     - When are tickets most likely to be issued?
+    - Which parking meters require ongoing management, operations, and maintenance.
 
