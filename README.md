@@ -62,9 +62,10 @@ Open Jupyter Notebook
    ```
    
 ### Challenges group faced
-
- 1. Converting Julian date format to datetime format for column [issue_date]– During the conversion process, new column was created for     issue_date with right datetime format.    
- 2. Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
+   
+  Converting data type for column [Amount_paid] – Within the column there were two formats which made it difficult to convert it to       float at once. Multiple steps had to be done to change that column to float. 
+  Violation code - For few violation code there were no information available which made it difficult to interpret.
+  Dropping rows vs columns for latitude/longitude. Dropping rows lost three years of data.
  
  ### Conclusion
  
